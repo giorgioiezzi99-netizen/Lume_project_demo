@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Lume Studios | Private Identity</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <nav class="nav" aria-label="Navigazione principale">
+    <a class="brand" href="#top" aria-label="The Lume Studios">
+      <svg class="brand-mark" viewBox="0 0 240 260" aria-hidden="true">
+        <g fill="none" stroke="currentColor" stroke-width="12" stroke-linecap="square" stroke-linejoin="miter">
+          <path d="M119 236C73 233 42 204 43 161c.5-31 20-62 39-91l9 58 31-93 65 120c24 49-18 83-68 81Z" />
+          <path d="M119 234c-30-2-49-24-39-55l39-71 39 71c10 31-9 53-39 55Z" />
+          <path d="M122 36v72" />
+          <path d="M82 70 91 128" />
+          <path d="M43 161l40 32" />
+          <path d="M187 155l-39 38" />
+        </g>
+      </svg>
+      The Lume Studios
+    </a>
+    <div class="nav-links">
+      <a href="#prototype">Prototype</a>
+      <a href="#drop">Drop</a>
+      <a href="#request">Bid Request</a>
+    </div>
+  </nav>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-media" aria-hidden="true">
+        <video src="assets/lume-showcase.mp4" autoplay muted loop playsinline poster="assets/still-clean-210.png"></video>
+      </div>
+      <div class="hero-content">
+        <p class="kicker">Black-on-black prototype / Private Identity</p>
+        <h1>LUME, made once.</h1>
+        <div class="hero-copy">
+          <p>Una maglia nera, un segno tonale, una numerazione privata. Il primo prototipo diventa il linguaggio visivo per i drop su misura di The Lume Studios.</p>
+          <div class="cta-row">
+            <a class="button light" href="#prototype">View Prototype</a>
+            <a class="button" href="#request">Send Request</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="prototype" class="section split">
+      <div class="product-frame reveal">
+        <img src="assets/LUME.png" alt="Black LUME prototype t-shirt with tonal logo">
+        <div class="spec-strip" aria-label="Prototype specifications">
+          <div class="spec"><span>Base</span><strong>Black premium tee</strong></div>
+          <div class="spec"><span>Mark</span><strong>Tonal private flame</strong></div>
+          <div class="spec"><span>Edition</span><strong>Made once</strong></div>
+        </div>
+      </div>
+      <div class="text-block reveal">
+        <p class="kicker">Prototype direction</p>
+        <h2>Quiet enough to wear. Precise enough to collect.</h2>
+        <p>Il sito ora parte dal capo reale: una presenza più fisica, meno astratta. La storia non promette un prodotto generico, ma presenta un oggetto privato con codici chiari: tono su tono, segno vicino al corpo, numero irripetibile.</p>
+        <p>Il linguaggio rimane essenziale, ma l'esperienza è più editoriale: video, immagini scelte e mockup diventano la prova visiva della collezione.</p>
+        <div class="rule-list">
+          <div class="rule"><strong>01</strong><span>Nessun restock, nessuna ripetizione della stessa combinazione.</span></div>
+          <div class="rule"><strong>02</strong><span>Ogni capo può portare nome, sigillo e posizione nella serie privata.</span></div>
+          <div class="rule"><strong>03</strong><span>Le richieste vengono selezionate prima della produzione.</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="drop" class="section">
+      <div class="section-head reveal">
+        <p class="kicker">Drop logic</p>
+        <h2>Small runs with private decisions.</h2>
+      </div>
+      <div class="drop-grid">
+        <article class="card reveal">
+          <span class="card-number">I / Discovery</span>
+          <h3>Il capo viene presentato come archivio, non come prodotto da scaffale.</h3>
+          <p>Ogni pagina mostra il segno, il materiale, il numero previsto e il motivo del drop.</p>
+        </article>
+        <article class="card reveal">
+          <span class="card-number">II / Bid</span>
+          <h3>La richiesta vale più del carrello.</h3>
+          <p>Il collezionista propone una combinazione: capo, numerazione, personalizzazione e valore.</p>
+        </article>
+        <article class="card reveal">
+          <span class="card-number">III / Assignment</span>
+          <h3>L'atelier accetta, rifiuta o rilancia.</h3>
+          <p>Quando la richiesta è coerente, il capo entra in produzione con il suo sigillo privato.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="request" class="section">
+      <div class="request-panel reveal">
+        <div class="form-copy">
+          <p class="kicker">Bid Request</p>
+          <h2>Request a private piece.</h2>
+          <p>Una prima bozza per raccogliere richieste di drop privati, coppie, capsule familiari o pezzi singoli numerati. Il form è pronto per essere collegato a email, CRM o backend quando il progetto passa dalla demo al lancio.</p>
+        </div>
+        <form class="form-grid" action="mailto:studio@thelume.studio" method="post" enctype="text/plain">
+          <label>
+            Nome
+            <input name="name" autocomplete="name" placeholder="Nome e cognome">
+          </label>
+          <label>
+            Email
+            <input name="email" type="email" autocomplete="email" placeholder="nome@email.com">
+          </label>
+          <label>
+            Richiesta
+            <select name="request_type">
+              <option>Private pair</option>
+              <option>Single 1/1</option>
+              <option>Family capsule</option>
+              <option>Team drop</option>
+            </select>
+          </label>
+          <label>
+            Visione
+            <textarea name="vision" placeholder="Nomi, numerazione, occasione, quantità desiderata e budget indicativo."></textarea>
+          </label>
+          <button class="button dark" type="submit">Send Bid</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>© 2026 The Lume Studios</span>
+    <span>Private Identity / Made Once</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
